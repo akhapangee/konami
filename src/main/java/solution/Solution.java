@@ -1,3 +1,15 @@
+package solution;
+
+class MyException extends Exception {
+    public MyException(String message) {
+        super(message);
+    }
+
+    public MyException(String message, Throwable e) {
+        super(message, e);
+    }
+}
+
 public class Solution {
     public static void main(String[] args) {
         int solutionLength = 3;
@@ -61,12 +73,4 @@ public class Solution {
     }
 }
 
-class MyException extends Exception {
-    public MyException(String message) {
-        super(message);
-    }
 
-    public MyException(String message, Throwable e) {
-        super(message, e);
-    }
-}
